@@ -1,0 +1,31 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+
+
+# Secrets / credentials
+*.pem
+*.key
+*.pfx
+*.secret
+
+
+
+# TFLint
+tflint-report.json
+
+# Checkov
+checkov-report.json
+
+# TruffleHog
+trufflehog-report.json
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
