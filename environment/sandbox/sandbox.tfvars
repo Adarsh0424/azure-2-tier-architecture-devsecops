@@ -130,8 +130,7 @@ public_ips = {
     allocation_method   = "Static"
   }
 }
-terraform {
-}
+
 
 application_gateways = {
   appgw1 = {
