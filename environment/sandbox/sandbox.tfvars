@@ -130,8 +130,6 @@ public_ips = {
     allocation_method   = "Static"
   }
 }
-
-
 application_gateways = {
   appgw1 = {
     name                = "sandbox-appgw"
