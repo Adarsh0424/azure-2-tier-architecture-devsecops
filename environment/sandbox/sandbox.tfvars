@@ -143,3 +143,26 @@ application_gateways = {
   }
 }
 
+key_vaults = {
+  kv1 = {
+    name                        = "sandbox-kv-001"
+    resource_group_name         = "sandbox-rg"
+    location                    = "centralindia"
+    sku_name                    = "standard"
+    enabled_for_disk_encryption = true
+    soft_delete_retention_days  = 7
+    purge_protection_enabled    = false
+  }
+}
+
+log_analytics_workspaces = {
+  law1 = {
+    name                = "sandbox-law-001"
+    resource_group_name = "sandbox-rg"
+    location            = "centralindia"
+    sku                 = "PerGB2018"
+    retention_in_days   = 30
+  }
+}
+
+

@@ -56,3 +56,16 @@ module "application_gateways" {
   depends_on           = [module.subnets, module.public_ips]
 }
 
+module "key_vaults" {
+  source     = "../../modules/azurerm_key_vault"
+  key_vaults = var.key_vaults
+  depends_on = [module.resource_groups]
+}
+
+module "log_analytics_workspaces" {
+  source                   = "../../modules/azurerm_log_analytics_workspace"
+  log_analytics_workspaces = var.log_analytics_workspaces
+  depends_on               = [module.resource_groups]
+}
+
+
