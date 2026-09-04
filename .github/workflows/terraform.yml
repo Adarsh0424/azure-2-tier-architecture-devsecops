@@ -1,9 +1,8 @@
 name: Terraform CI
-
 on:
   push:
     branches:
-      - feature/2-tier-architecture
+      - main
 
 jobs:
   terraform:
